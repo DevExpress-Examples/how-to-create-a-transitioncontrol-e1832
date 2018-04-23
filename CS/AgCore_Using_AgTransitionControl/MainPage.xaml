@@ -1,0 +1,28 @@
+﻿<UserControl xmlns:my="clr-namespace:DevExpress.AgCore;assembly=DevExpress.AgCore.v9.3"
+                       x:Class="AgCore_Using_AgTransitionControl.MainPage"
+                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <DataTemplate x:Key="r0">
+                <Rectangle Fill="Red" Stroke="Black" StrokeThickness="3"
+                                   Width="150" Height="150" RadiusX="5" RadiusY="5"/>
+            </DataTemplate>
+            <DataTemplate x:Key="r1">
+                <Rectangle Fill="Yellow" Stroke="Black" StrokeThickness="3"
+                                   Width="100" Height="100" RadiusX="5" RadiusY="5"/>
+            </DataTemplate>
+            <DataTemplate x:Key="r2">
+                <Rectangle Fill="Blue" Stroke="Black" StrokeThickness="3"
+                                   Width="50" Height="50" RadiusX="5" RadiusY="5"/>
+            </DataTemplate>
+        </Grid.Resources>
+        <my:AgTransitionControl x:Name="trControl"
+                      TransitionStyle="Fly" Width="400" Height="250"
+                      MouseLeftButtonUp="trControl_MouseLeftButtonUp">
+        </my:AgTransitionControl>
+    </Grid>
+</UserControl>
